@@ -3,27 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Gallery</title>
+    <title>Party Planner</title>
     <link rel="stylesheet" href="index.css" />
     <script defer src="index.js"></script>
   </head>
   <body>
-    <h1>Recipe Gallery</h1>
-    <form id="addRecipe">
+    <h1>Upcoming Events</h1>
+    <form id="addEvent">
       <label>
-        Recipe Name
-        <input type="text" name="title" placeholder="Recipe Name" />
+        Event Name:
+        <input type="text" name="eventName" placeholder="Event Name" />
       </label>
       <label>
-        Image URL
-        <input type="text" name="imageUrl" placeholder="Image URL" />
+        Event Description:
+        <input type="text" name="description" placeholder="Event Description" />
       </label>
       <label>
-        Instructions
-        <input type="text" name="instructions" placeholder="Instructions" />
+        Event Date:
+        <input type="datetime-local" name="eventDate" placeholder="Event Date" />
       </label>
-      <button>Add Recipe</button>
+      <label>
+        Location:
+        <input type="text" name="location" placeholder="Location" />
+      </label>
+      <button>Add Event</button>
     </form>
-    <ul id="recipes"></ul>
+    <ul id="events"></ul>
   </body>
 </html>
